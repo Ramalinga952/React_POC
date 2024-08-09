@@ -49,6 +49,7 @@ function App() {
                 id="uncontrolled-tab-example"
                 className="mb-3"
               >
+              
       <Tab eventKey="home" title="CASH">
         <Carousel activeIndex={index} onSelect={handleSelect} >
             <Carousel.Item className="border-black">
