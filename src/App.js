@@ -18,7 +18,7 @@ function App() {
        <nav className='flex px-5 h-14 bg-blue-700 text-white items-center justify-between'>
       <div className="flex space-x-4">
       <div className=''>
-          <a className="text-2xl text-white md:ml-[1px]" href="#">&#8801;</a>
+          <a className="text-4xl text-white md:ml-[1px]" href="#">&#8801;</a>
         </div>
         <div className='mx-4'>Menu</div>
         
@@ -28,14 +28,16 @@ function App() {
       </div>
       <div className="flex space-x-4 items-center">
         <div className="relative">
-           </div>
+          <span className="absolute top-0 right-0 inline-block w-2 h-2 transform translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full"></span>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405a2.032 2.032 0 01-.47-1.408l.775-6.197a8.058 8.058 0 00-7.62-7.62l-6.197.775a2.032 2.032 0 01-1.408.47L7 3H2m0 0h5m-5 0v5"></path></svg>
+        </div>
         <div>Logout</div>
       </div>
     </nav>
       <main className="flex-grow p-10">
       <button className="bg-blue-800 px-4 py-1 text-white hover:bg-gray-400">HOME</button>
       <div className="flex gap-4 mt-4">
-        {/* <!-- First Column with Two Divs --> */}
+       
       <div className="flex flex-col gap-4 flex-1">
             <div className="border border-gray-300">
                 <div className="bg-blue-800 text-white px-4 py-2">PAYMENT-PENDING APPROVAL</div>
@@ -49,7 +51,6 @@ function App() {
                 id="uncontrolled-tab-example"
                 className="mb-3"
               >
-              
       <Tab eventKey="home" title="CASH">
         <Carousel activeIndex={index} onSelect={handleSelect} >
             <Carousel.Item className="border-black">
@@ -107,7 +108,7 @@ function App() {
                 </div>
             </div>
       </div>
-        {/* <!-- Second Column with One Div --> */}
+        
         <div className="flex flex-col gap-4 flex-1">
             <div className="border border-gray-300">
                 <div className="bg-blue-800 text-white px-4 py-2">PRIORITY MESSAGE</div>
@@ -130,7 +131,7 @@ function App() {
       <Tab eventKey="profile" title="BANK WORKFLOW">
         
         <div className="flex justify-around items-center w-full mt-4">
-        {/* Processed by Bank */}
+       
         <div className='flex space-x-8'>
         <div className="flex flex-col items-center">
                 <div className="relative w-10 h-40 bg-gray-200 rounded-lg overflow-hidden">
@@ -139,7 +140,7 @@ function App() {
                 <span className="mt-2 text-lg font-semibold">25</span>
                 <span className="text-sm text-gray-600">Processed by Bank</span>
               </div>
-        {/* Rejected by Bank */}
+        
         <div className="flex flex-col items-center">
                 <div className="relative w-10 h-40 bg-gray-200 rounded-lg overflow-hidden">
                   <div className="absolute bottom-0 w-full bg-blue-500" style={{ height: '30%' }}></div>
@@ -155,7 +156,7 @@ function App() {
                 </div>
             </div>
         </div>
-        {/* <!-- Third Column with One Div --> */}
+        
         <div className="flex-1 border border-gray-300">
             <div className="bg-blue-800 text-white px-4 py-2">QUICK NAVIGATION</div>
             <div className="bg-white px-4 py-2">
